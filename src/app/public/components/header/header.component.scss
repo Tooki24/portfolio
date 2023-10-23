@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    #cv-button {
+    font-family: 'Karla', sans-serif;
+    color:black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.3rem 2rem;
+    margin: 0.5rem;
+    border: 3px solid transparent;
+    &:hover {
+        border: #99AE7F solid 3px;
+        border-radius: 10px;
+    }
+}
+}
+
