@@ -1,0 +1,63 @@
+@import '../../../../styles.scss';
+
+
+.presentation {
+    width: 63rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:  5rem auto;
+    flex-shrink: 0; 
+.presentation__bubble {
+     padding: 2rem 3rem ;
+    border-radius: 1.25rem;
+    background: linear-gradient(0deg, rgba(153, 174, 127, 0.67) 0%, rgba(153, 174, 127, 0.67) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px); 
+    .presentation__text {
+        color: #FFF;
+        font-family: ABeeZee;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+}
+
+    .presentation-img {
+        position: absolute;
+        z-index:-10
+    }
+    .presentation-img__top {
+        right: -10rem;
+        top: -5rem;
+    }
+
+    .presentation-img__bottom {
+        left: -10rem;
+        top: 15rem;
+    }
+}
+
+@media #{$media-desktop} {
+
+    .presentation {
+        width: 90%;
+        .presentation__bubble {
+            .presentation__text {
+                font-size:1rem;
+            }
+        }
+        
+    .presentation-img__top {
+        display: none;
+    }
+
+    .presentation-img__bottom {
+        display: none;
+    }
+    }
+        
+}

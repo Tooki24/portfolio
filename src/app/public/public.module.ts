@@ -3,13 +3,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    TitleComponent
+    TitleComponent,
+    PresentationComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { TitleComponent } from './components/title/title.component';
   ],
   exports: [
     HeaderComponent,
-    TitleComponent
+    TitleComponent,
+    PresentationComponent
    ]
 })
 export class PublicModule { }
