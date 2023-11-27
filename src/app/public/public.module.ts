@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 
@@ -11,7 +12,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
   declarations: [
     HeaderComponent,
     TitleComponent,
-    PresentationComponent
+    PresentationComponent,
+    ExperienceComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
   exports: [
     HeaderComponent,
     TitleComponent,
-    PresentationComponent
+    PresentationComponent,
+    ExperienceComponent
    ]
 })
 export class PublicModule { }
