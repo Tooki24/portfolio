@@ -6,6 +6,7 @@
     align-items:center;
     justify-content: center;
     margin-top : 20rem;
+    margin-bottom: 10rem;
 
     .experience-title {
         display:flex;
@@ -120,4 +121,76 @@
         }
     }
 
+}
+
+@media #{$media-desktop} {
+    .experience {
+        margin-top: 10rem;
+        .experience-title {
+
+            .experience-title__text {
+                font-size: 1.5rem;
+            }
+            img {
+                display: none;
+            }
+        }
+
+            .experience-wrapper {
+                justify-content: center;
+                align-items:center;
+                margin-left: 0rem;
+        &:before {
+            display:none;
+        }
+
+        .experience-details {
+            position:relative;
+            display: flex;
+            justify-content: start;
+            align-items:start;
+            width:80%;
+            margin-top: 5rem;
+
+            img {
+                display:none;
+            }
+            
+            .experience-wrapper__text {
+                text-align:start;
+                margin-left: 0rem;
+
+                &:before {
+                    position: absolute;
+                    left: -10%;
+                    top: 15.5%;
+                    display:block;
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 100%;
+                    background-color: #CFAEF9;
+                    
+                }
+
+                .experience-details__title {
+                    position:relative;
+                }
+
+                .experience-details__list {
+                    font-style:italic;
+                    font-size:16px;
+                }
+            }
+        }
+        .experience-details__stage {
+            position:relative;
+            .experience-wrapper__text {
+                &:before {
+                    top: 15.5%;
+                }
+            }
+        }
+    }
+    }
 }
