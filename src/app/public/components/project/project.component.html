@@ -1,0 +1,19 @@
+<div class="project">
+    <div class="project-title">
+        <img class="project-blob" src="../../../../assets/img/blob.png" alt="">
+        <img class="project-blob__2" src="../../../../assets/img/blob2.png" alt="">
+
+        <h2 class="project-title__text">Mes projets</h2>
+        <img class="project-title__img" src="../../../../assets/img/project-titre.png" alt="">
+    </div>
+
+    <div class="project-wrapper">
+        <a href="{{project.attributes.lien}}" target="_blank" class="project-details" *ngFor="let project of projects">
+            <img src="../../../../assets/img/{{project.attributes.image}}" alt="">
+            <div class="project-details__text">
+                <h2>{{project.attributes.titre}}</h2>
+                <p>{{project.attributes.description}}</p>
+            </div>
+        </a>
+    </div>
+</div>

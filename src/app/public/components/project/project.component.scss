@@ -1,0 +1,156 @@
+@import '../../../../styles.scss';
+
+.project {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    margin-top : 20rem;
+    margin-bottom: 10rem;
+    .project-title {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+
+        .project-title__text {
+            position:relative;
+            color: #000;
+            font-family: Julius Sans One;
+            font-size: 2.25rem;
+            font-weight: 400;
+            margin-right: 5rem;
+            &::after {
+                content: '';
+                display:block;
+                position:absolute; 
+                width: 80%;
+                height: 3px;
+                background-color: #CFAEF9;
+                text-align:center;
+                left:50%;
+                transform:translate(-50%);
+                transition: 0.5s;
+            }
+            &:hover:after {
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .project-blob {
+        position: absolute;
+        top: -20rem;
+        right: 5rem;
+    }
+
+    .project-blob__2 {
+        position: absolute;
+        top: -10rem;
+        left: -15rem;
+    }
+
+    .project-wrapper {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        flex-wrap: wrap;
+        
+
+        .project-details {
+            margin-top: 2rem;
+            text-decoration: none;
+            color:black;
+            position:relative;
+            display:flex;
+            flex-direction: column;
+            align-items:start;
+            justify-content: end;
+            border-radius: 0.625rem;
+            width:25rem;
+            height: 25rem;
+            transition: 0.5s;
+            &:hover {
+                width:30rem;
+                height: 30rem;
+                transition: 0.5s;
+                img {
+                    width:30rem;
+                    height: 30rem;
+                    transition: 0.5s;
+                }
+                .project-details__text{
+                    transition:0.5s;
+                }
+            }
+             img {
+                border-radius: 0.625rem;
+                box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25); 
+                position:absolute;
+                border-radius: 0.625rem;
+                width:25rem;
+                height: 25rem;
+                z-index: -10;
+                transition: 0.5s;
+            }
+            .project-details__text {
+                transition:0.5s;
+                border-radius: 0 0 0.625rem 0.625rem ;
+                padding: 0.5rem;
+                background-color:white;
+                font-family: ABeeZee, sans-serif;
+                h2 {
+                    font-family: Karla, sans-serif; 
+                }
+            }
+        }
+    }
+}
+
+@media #{$media-desktop} { 
+    .project {
+        margin-top: 5rem;
+        .project-blob, .project-blob__2, .project-title__img {
+            display: none;
+        }
+
+        .project-title {
+            .project-title__text {
+                margin-right: 0rem;
+                font-size: 1.5rem            
+            }
+        }
+
+        .project-wrapper {
+            margin-top:0rem;
+            flex-direction: column;
+            align-items:center;
+            .project-details {
+                margin-top: 2rem;
+                max-width: 80%;
+                img {
+                    width:100%;
+                    height: 100%;
+                }
+                 .project-details__text { 
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media #{$media-mobile-sm} {
+    .project {
+        .project-wrapper {
+            .project-details {
+                img {
+                    height: 80%;;
+                }
+            }
+        }
+    }
+}

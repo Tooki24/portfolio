@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { ProjectComponent } from './components/project/project.component';
 
 
 
@@ -13,7 +14,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeaderComponent,
     TitleComponent,
     PresentationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeaderComponent,
     TitleComponent,
     PresentationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectComponent
    ]
 })
 export class PublicModule { }
