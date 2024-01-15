@@ -1,63 +1,66 @@
-
 @import '../../../../styles.scss';
 
-#title  {
-    img { 
-    margin-left: 30px;
-    margin-top: 5px;
+#title {
+    img {
+        margin-left: 30px;
+        margin-top: 5px;
     }
 
     display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
 
-        .title__text {
-            display:flex;
-            flex-direction: column;
-            margin-left: 8rem;
+    .title__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8rem;
 
-            .title__name {
-                font-family: 'Karla', sans-serif;
-                font-size:6rem;
-                font-weight: 700;
-                margin-bottom: 0;
-            }
-            .title__status {
-                font-family: 'Julius Sans One', sans-serif;
-                font-size: 2.25rem;
-                text-transform: uppercase;
-            }
+        .title__name {
+            font-family: 'Karla', sans-serif;
+            font-size: 6rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 6rem;
         }
+
+        .title__status {
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 2.25rem;
+            text-transform: uppercase;
+        }
+    }
 }
 
 
 @media #{$media-desktop} {
-    #title  {
+    #title {
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 3rem;
-        margin-left:0;
-        margin:auto;
+        margin-left: 0;
+        margin: auto;
+
         img {
             margin-left: 0;
         }
 
         .title__text {
-            display:flex;
+            display: flex;
             flex-direction: column;
-            text-align:center;  
+            text-align: center;
             margin-left: 0rem;
 
             .title__name {
                 font-family: 'Karla', sans-serif;
-                font-size:4rem;
+                font-size: 4rem;
                 font-weight: 700;
                 margin-bottom: 0;
             }
+
             .title__status {
                 font-family: 'Julius Sans One', sans-serif;
                 font-size: 1.25rem;
@@ -71,6 +74,4 @@
     }
 }
 
-@media #{$media-tablet} {
-
-}
+@media #{$media-tablet} {}

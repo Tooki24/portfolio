@@ -9,15 +9,20 @@ $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 
 
-    .floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    }
+.floating { 
+animation-name: floating;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
 
-        @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50% { transform: translate(0, 15px); }
-        100% { transform: translate(0, -0px); }   
-    }
+    @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }   
+}
+
+html, body {
+    margin: 0;
+    padding:0;
+}
